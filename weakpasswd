@@ -1,0 +1,5 @@
+user2:x:3:1000:GECOS:directory:shell1
+user4:x:5:1002:GECOS:directory:shell4
+user1:x:2:1000:GECOS:directory:shell4
+user0:x:1:1004:GECOS:directory:shell4
+user3:x:4:1001:GECOS:directory:shell0

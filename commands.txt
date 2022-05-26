@@ -1,0 +1,37 @@
+gcc -o run lab_7.c -lcrypt
+
+./run -f genSalt.txt genPasswords.txt
+
+
+
+john --wordlist=password.lst --rules C:\Users\brand\IdeaProjects\"465 Lab 7"\shadow.txt
+john --wordlist=password.lst --rules UNSHADOWED
+
+C:\Users\brand\IdeaProjects\"465 Lab 7"\shadow.txt
+
+C:\Users\brand\IdeaProjects\"465 Lab 7"\passwd.txt
+
+
+unshadow C:\Users\brand\IdeaProjects\"465 Lab 7"\weakpasswd C:\Users\brand\IdeaProjects\"465 Lab 7"\weakshadow > WEAK.txt
+unshadow C:\Users\brand\IdeaProjects\"465 Lab 7"\weakmedpasswd C:\Users\brand\IdeaProjects\"465 Lab 7"\weakmedshadow > WEAKMED.txt
+unshadow C:\Users\brand\IdeaProjects\"465 Lab 7"\mediumpasswd C:\Users\brand\IdeaProjects\"465 Lab 7"\mediumshadow > MED.txt
+unshadow C:\Users\brand\IdeaProjects\"465 Lab 7"\strongpasswd C:\Users\brand\IdeaProjects\"465 Lab 7"\strongshadow > STRONG.txt
+
+unshadow C:\Users\brand\IdeaProjects\"465 Lab 7"\6p C:\Users\brand\IdeaProjects\"465 Lab 7"\6s > 6
+unshadow C:\Users\brand\IdeaProjects\"465 Lab 7"\2p C:\Users\brand\IdeaProjects\"465 Lab 7"\2s > 2
+unshadow C:\Users\brand\IdeaProjects\"465 Lab 7"\4p C:\Users\brand\IdeaProjects\"465 Lab 7"\4s > 4
+unshadow C:\Users\brand\IdeaProjects\"465 Lab 7"\8p C:\Users\brand\IdeaProjects\"465 Lab 7"\8s > 8
+unshadow C:\Users\brand\IdeaProjects\"465 Lab 7"\10p C:\Users\brand\IdeaProjects\"465 Lab 7"\10s > 10
+unshadow C:\Users\brand\IdeaProjects\"465 Lab 7"\12p C:\Users\brand\IdeaProjects\"465 Lab 7"\12s > 12
+unshadow C:\Users\brand\IdeaProjects\"465 Lab 7"\randomp C:\Users\brand\IdeaProjects\"465 Lab 7"\randoms > random
+
+john random
+
+john --show 6
+
+john --incremental 6
+
+john --incremental=Alnum 12
+
+john --wordlist=cracklib.txt --rules random
+
